@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hy-end.com/home</title>
+    <link rel="icon" type="image/x-icon" href="00.png">
+    <meta charset="UTF-8">
+    <title>Background Image Example</title>
+    <style>
+        h1{
+            color: #154575;
+            font-size: 30px;
+            font-family: "Bagel Fat One";
+        }
+        h3{
+            color: #313131d8;
+            font-size: 20px;
+            font-family: "조선가는고딕";
+        }
+        h4{
+            color: #313131d8;
+            font-size: 20px;
+            font-family: "조선가는고딕"; 
+        }
+    </style>
+    <style>
+        body {
+            background-image: url('background.gif');
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        #header {
+            font-size: 24px;
+            color: rgb(7, 77, 168);
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
+        #header img {
+            height: 40px;
+            margin-right: 0px;
+        }
+        nav {
+            width: 100%;
+            background-color: #3964a8d7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.185);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        @keyframes navAppear {
+            from { transform: translateY(-10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        nav a {
+            color: #fff;
+            text-align: center;
+            padding: 12px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            border-radius: 30px;
+            margin: 0px 28px;
+        }
+        nav a:hover {
+            background-color: #2C3E50;
+            color: #f2f2f2;
+            transform: translateY(-3px);
+        }
+        section {
+            padding: 150px;
+            text-align: center;
+        }
+        .section-heading {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: rgb(26, 98, 192);
+            animation: fadeIn 1.5s ease-in;
+        }
+        #title {
+            font-size: 86px;
+            color: rgb(68, 125, 199);
+            margin: 40px 0;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in;
+            text-shadow: 5px 6px 6px rgba(0, 0, 0, 0.3);
+        }
+        .content {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #2b2b2bd5;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="header">
+            <img src="hyendlogo.png" alt="HY-END Logo">
+        </div>
+        <div>
+            <a href="index.html" target="_self">HOME</a>
+            <a href="introduction.html" target="_self">INTRODUCTION</a>
+            <a href="activity.html" target="_self">ACTIVITY</a>
+            <a href="contact.html" target="_self">CONTACT</a>
+        </div>
+    </nav>
+    <section class="content">
+        <h3 id="detail-container">WELCOME TO</h3>
+        <h1 id="title"><strong>HY-END</strong></h1>
+        <h4 id="detail-container">한양대학교ERICA 소프트웨어융합대학 학회 하이엔드HY-END</h4>
+    </section>
+</body>
+</html>
